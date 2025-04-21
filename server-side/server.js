@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
+const bcrypt = require('bcryptjs'); // bcryptjs
 const jwt = require("jsonwebtoken");
 const Food = require("./models/Food");
 const User = require("./models/User");
