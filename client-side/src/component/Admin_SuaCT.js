@@ -59,7 +59,7 @@ const SuaCT = () => {
 
     try {
       setIsUpdating(true); // Đặt trạng thái để ngăn chặn nhấn liên tiếp
-      const res = await fetch(`http://localhost:5000/foods/${id}`, {
+      const res = await fetch(`https://doancuoiky-phln.onrender.com/foods/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
