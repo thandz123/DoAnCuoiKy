@@ -229,7 +229,16 @@ app.get("/foods/:id", async (req, res) => {
   }
 });
 
-// Start server
-app.listen(5000, () => {
-  console.log("Server đang chạy tại http://localhost:5000");
+app.get("/api/endpoint", (req, res) => {
+  res.json({ message: "API Endpoint hoạt động!" });
 });
+app.get("/api/test", (req, res) => {
+  res.json({ message: "API is working!" });
+});
+
+
+// Start server
+app.listen(process.env.PORT || 5000, () => {
+  console.log("Server đang chạy tại port " + (process.env.PORT || 5000));
+});
+

@@ -7,7 +7,7 @@ const ChiTietMonAn = () => {
   const navigate = useNavigate(); // Khởi tạo useNavigate
 
   useEffect(() => {
-    fetch(`http://localhost:5000/foods/${id}`)
+    fetch(`https://doancuoiky-phln.onrender.com/foods/${id}`)
       .then(res => res.json())
       .then(data => setFood(data))
       .catch(err => console.error("Lỗi khi fetch chi tiết món ăn:", err));

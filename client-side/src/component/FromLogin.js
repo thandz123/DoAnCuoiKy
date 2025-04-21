@@ -14,7 +14,7 @@ const FromLogin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const url = isLogin ? 'http://localhost:5000/login' : 'http://localhost:5000/register';
+    const url = isLogin ? 'https://doancuoiky-phln.onrender.com/login' : 'https://doancuoiky-phln.onrender.com/register';
 
     try {
       const res = await fetch(url, {
@@ -35,7 +35,7 @@ const FromLogin = () => {
       if (isLogin && data.token) {
         localStorage.setItem("token", data.token);
       
-        const profileRes = await fetch("http://localhost:5000/profile", {
+        const profileRes = await fetch("https://doancuoiky-phln.onrender.com/profile", {
           headers: {
             "Authorization": `Bearer ${data.token}`
           }

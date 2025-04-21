@@ -50,7 +50,7 @@ const SuaMonAn = () => {
     };
 
     try {
-      const response = await fetch(`http://localhost:5000/foods/${selectedFood._id}`, {
+      const response = await fetch(`https://doancuoiky-phln.onrender.com/foods/${selectedFood._id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedData),

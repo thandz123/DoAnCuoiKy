@@ -44,7 +44,7 @@ const AddFoodForm = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/foods/next-id/${category}`);
+      const response = await fetch(`https://doancuoiky-phln.onrender.com/next-id/${category}`);
       const data = await response.json();
       if (response.ok) {
         setGeneratedId(data.nextId);

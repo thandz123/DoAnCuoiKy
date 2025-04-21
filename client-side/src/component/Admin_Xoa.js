@@ -11,7 +11,7 @@ const FoodManager = () => {
 
   const fetchFoods = async () => {
     try {
-      const res = await fetch("http://localhost:5000/foods");
+      const res = await fetch("https://doancuoiky-phln.onrender.com/foods");
       const data = await res.json();
       setFoods(data);
     } catch (err) {
@@ -24,7 +24,7 @@ const FoodManager = () => {
     if (!confirm) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/foods/delete/${id}`, {
+      const res = await fetch(`https://doancuoiky-phln.onrender.com/foods/delete/${id}`, {
         method: "DELETE",
       });
       if (res.ok) {
