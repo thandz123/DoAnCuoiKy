@@ -1,0 +1,165 @@
+/* Container for the entire form */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Info section styling */
+  .info {
+    background-color: #eef2f5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .info p {
+    margin: 5px 0;
+  }
+  
+  /* Form groups */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-field, .textarea-field, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .textarea-field {
+    min-height: 100px;
+  }
+  
+  .input-field:focus, .textarea-field:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  /* Submit button */
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2ecc71;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .form-group {
+      margin-bottom: 15px;
+    }
+  }
+  
+
+
+  /* FromLogin.css */
+
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px 25px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .login-container h2 {
+    margin-bottom: 24px;
+    color: #333;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .login-container input {
+    padding: 12px 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .login-container input:focus {
+    border-color: #4a90e2;
+  }
+  
+  .login-container button[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .login-container button[type="submit"]:hover {
+    background-color: #357ac8;
+  }
+  
+  .login-container p {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  
+  .login-container button[type="button"] {
+    background: none;
+    color: #4a90e2;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .login-container button[type="button"]:hover {
+    text-decoration: underline;
+  }
+  
+  .user-info {
+    margin-top: 24px;
+    background: #e6f7ff;
+    padding: 12px;
+    border-radius: 8px;
+    color: #333;
+  }
+  
